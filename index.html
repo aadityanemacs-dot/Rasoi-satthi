@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    <meta name="theme-color" content="#C2410C" />
+    <meta name="description" content="रसोई साथी - बुंदेलखंडी एवं भारतीय घरेलू भोजन खोजक (घर में क्या है? आज क्या बनाएं?)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="रसोई साथी" />
+    
+    <!-- Google Fonts: Noto Sans Devanagari & Mukta for beautiful, readable Hindi typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>रसोई साथी - बुंदेलखंडी रसोई</title>
+  </head>
+  <body class="bg-cream-100 dark:bg-stone-900 text-stone-900 dark:text-stone-100 font-hindi antialiased min-h-screen selection:bg-turmeric-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
